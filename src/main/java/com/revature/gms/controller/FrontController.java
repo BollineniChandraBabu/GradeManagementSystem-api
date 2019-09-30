@@ -152,6 +152,7 @@ public class FrontController extends HttpServlet {
 	        			int mark=Integer.parseInt(request.getParameter("marks"));
 	        			marks.setMarks(mark);
 	        			object = marksController.insertOrUpdate(marks);
+	        			System.out.println("insert result:" +object);
 	        			break;
 	        	}
 	        	
