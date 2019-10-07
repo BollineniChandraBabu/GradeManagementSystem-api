@@ -202,6 +202,12 @@ public class FrontController extends HttpServlet {
 	        			object = departmentsController.checkDepartment(id);
 	        			break;
 	        	}
+		        case "/FrontController/viewDepartments.do": 
+	        	{
+	        			DepartmentsController departmentsController = new DepartmentsController();
+	        			object = departmentsController.viewDepartments();
+	        			break;
+	        	}
 		        
 		        	case "/FrontController/viewtop.do": 
 		        	{
