@@ -163,7 +163,13 @@ public class FrontController extends HttpServlet {
 	        			object = studentsController.viewStudents();
 	        			break;
 	        	}
-	        	
+		        case "/FrontController/viewStudentMarks.do": 
+	        	{
+	        			MarksController marksController = new MarksController();
+	        			int studentId=Integer.parseInt(request.getParameter("studentid"));
+	        			object = marksController.viewStudentMarks(studentId);
+	        			break;
+	        	}
 		        case "/FrontController/checkSubject.do": 
 	        	{
 	        			SubjectsController subjectsController = new SubjectsController();

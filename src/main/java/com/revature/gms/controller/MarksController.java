@@ -36,6 +36,9 @@ MarksServices marksServices = new MarksServices();
 	public boolean checkSubjectById(int subjectId) {
 		return marksServices.checkSubjectById(subjectId);
 	}
+	public List<Marks> viewStudentMarks(int studentId) {
+		return marksServices.viewStudentMarks(studentId);
+	}
 	
 	
 
